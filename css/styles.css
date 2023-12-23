@@ -478,30 +478,44 @@ header {
     margin-bottom: 16px;
 }
 
+.footer-form {
+    display: flex;
+    gap: 24px;
+
+}
+
+.footer-form-label {
+    
+}
+
 .footer-input {
     width: 264px;
     height: 40px;
+    font-size: 12px;
     border-radius: 4px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    color: #ffffff;
     border: 1px solid #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    background: none;
-    margin-right: 24px;
+    background-color: transparent;
 }
 
 input::placeholder {
-    padding-top: 8px;
-    padding-left: 16px;
     color: #FFF;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 2;
-    letter-spacing: 0.04em;
 }
 
 .footer-btn {
-    font-family: inherit;
+    font-family: "Roboto";
     color: currentColor;
-    display: inline-flex;
+    display: flex;
+    min-width: 165px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
@@ -509,6 +523,8 @@ input::placeholder {
     border-radius: 4px;
     background: #4D5AE5;
     color: #ffffff;
+    cursor: pointer;
+    border: none;
 }
 
 .footer-icon {
