@@ -484,10 +484,6 @@ header {
 
 }
 
-.footer-form-label {
-    
-}
-
 .footer-input {
     width: 264px;
     height: 40px;
@@ -519,18 +515,20 @@ input::placeholder {
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     border-radius: 4px;
     background: #4D5AE5;
     color: #ffffff;
     cursor: pointer;
     border: none;
+    
 }
 
 .footer-icon {
     fill: #FFFFFF;
     width: 24px;
     height: 24px;
+    margin-left: 16px;
+   
 }
 
 /*Footer box*/
@@ -594,7 +592,7 @@ input::placeholder {
     Modal window
 */
 
-.backdrop {
+.backdrop.is-open {
     position: fixed;
     top: 0;
     left: 0;
@@ -614,7 +612,7 @@ input::placeholder {
     pointer-events: none;
 }
 
-.backdrop.is-open {
+.backdrop {
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
