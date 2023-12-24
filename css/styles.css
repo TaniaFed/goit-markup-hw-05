@@ -592,7 +592,7 @@ input::placeholder {
     Modal window
 */
 
-.backdrop.is-open {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -612,7 +612,7 @@ input::placeholder {
     pointer-events: none;
 }
 
-.backdrop {
+.backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
