@@ -452,12 +452,13 @@ header {
 }
 
 .box-two {
-    margin-right: 80px;
+    margin-right: auto;
 }
 
 .box-three {
-    margin-right: 159px;
+    flex-shrink: 0;
 }
+
 .footer-sl {
     display: flex;
     font-size: 16px;
@@ -469,7 +470,6 @@ header {
 }
 
 .footer-box-name {
-    display: flex;
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
@@ -520,6 +520,7 @@ input::placeholder {
     color: #ffffff;
     cursor: pointer;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-btn:hover,
@@ -535,21 +536,12 @@ input::placeholder {
    
 }
 
-/*Footer box*/
-
-.box-three {
-    width: 453px;
-    height: 80px;
-    flex-shrink: 0;
-}
-
 /*Team section*/
 
 .social-links {
     display: flex;
     justify-content: center;
     gap: 16px;
-    padding-top: 16px;
 }
 
 .team-socia-links {
@@ -648,7 +640,6 @@ input::placeholder {
     border-radius: 50%;
 
     margin-left: auto;
-    margin-bottom: 24px;
     transition-property: background-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -671,7 +662,6 @@ input::placeholder {
 }
 
 .modal-caption {
-    display: flex;
     position: relative;
     color:  #2E2F42;
     text-align: center;
@@ -799,24 +789,27 @@ textarea {
 } 
 .form-agreement {
     display: block;
-    margin-bottom: 24px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    
 }
 
 .form-agreement-checkbox {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-right: 8px;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
+}
+
+.checkbox:focus + .form-agreement .form-agreement-checkbox {
+    border-color: #4d5ae5;
 }
 
 .modal-checkbox-link {
